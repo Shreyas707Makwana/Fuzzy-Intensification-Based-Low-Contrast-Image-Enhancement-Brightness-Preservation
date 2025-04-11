@@ -26,6 +26,5 @@ This repository provides simple Python scripts to enhance low‑contrast images 
    - OpenCV windows show before/after images
    - Matplotlib plots histograms/CDFs
    - Console prints out all metrics
-###Happy Enhancing!
-###Bring your low‑contrast images to life with fuzzy intelligence. 🎨✨
-   
+
+## Happy Enhancing!
