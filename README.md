@@ -1,35 +1,31 @@
-# Fuzzy Intensification‑Based Low Contrast Image Enhancement & Brightness Preservation
+# Fuzzy Intensification‑Based Image Enhancement
 
-A Python toolkit that implements and compares a suite of fuzzy‑driven and classical histogram equalization algorithms for low‑contrast image enhancement, while preserving brightness. Includes quantitative quality metrics and visualizations to help you choose the best approach for your images.
+## Project Overview
+This repository provides simple Python scripts to enhance low‑contrast images and preserve brightness using both fuzzy‑intensification and classical histogram equalization methods. Compare multiple algorithms and see quality metrics and visualizations automatically.
 
----
+## Features
+- **Fuzzy Intensification**: Adaptive contrast enhancement driven by fuzzy histograms  
+- **Bi‑Histogram Equalization**: Mean‑split, standard‑split, vertical/horizontal variants  
+- **Classic Equalization**: Grayscale & color implementations  
+- **Quality Metrics**: Entropy, PSNR, AMBE, SSIM, VSI, MMSIM, GMSD  
+- **Visualization**: Before/after display and histogram/CDF plots
 
-## 🚀 Features
-
-- **Fuzzy Dissimilarity Histogram Equalization**  
-  – Computes a fuzzy dissimilarity histogram to drive adaptive contrast enhancement.  
-  – `fuzzy1.py`, `fuzzy2.py`, `fuzzy3.py`, `fuzz4.py`
-
-- **Bi‑Histogram Equalization Variants**  
-  – Brightness Preserving Bi‑Histogram Equalization (BBHE)  
-  – Dual Sub‑Image Histogram Equalization (DSIHE)  
-  – Standard Deviation‑Split Bi‑Histogram Equalization  
-  – Vertical + Horizontal Bi‑Histogram Equalization  
-  – `bhe.py`, `bhe1.py`, `bhe2.py`, `bheclr.py`, `bheclr1.py`, `bhe2clr.py`, `horiverti.py`
-
-- **Classic Histogram Equalization**  
-  – Grayscale & color implementations for baseline comparison.  
-  – `he.py`, `heclr.py`
-
-- **Objective Quality Metrics**  
-  – **Entropy** – measures information content  
-  – **PSNR** (Peak Signal‑to‑Noise Ratio)  
-  – **AMBE** (Absolute Mean Brightness Error)  
-  – **SSIM**, **VSI**, **MMSIM**, **GMSD** – advanced perceptual metrics  
-  – All scripts report metrics automatically after enhancement.
-
-- **Visualization & Reporting**  
-  – Histograms and CDF plots via Matplotlib  
-  – Side‑by‑side before/after display with OpenCV  
-
----
+## Quick Guide
+1. **Clone & install**  
+   ```bash
+   git clone https://github.com/your‑username/DesignProject.git
+   cd DesignProject
+   pip install numpy opencv-python scipy scikit-image matplotlib
+2. **Add your image**
+   Place your_image.tiff (or any supported format) in the project folder.   
+3. **Run an enhancement script**
+   ```bash
+   python bhe.py      # Bi‑Histogram Equalization example
+   python fuzzy1.py   # Fuzzy intensification example
+4. **View Results**
+   - OpenCV windows show before/after images
+   - Matplotlib plots histograms/CDFs
+   - Console prints out all metrics
+Happy Enhancing!
+Bring your low‑contrast images to life with fuzzy intelligence. 🎨✨
+   
