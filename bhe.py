@@ -4,10 +4,8 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from skimage.metrics import structural_similarity as ssim
 from skimage.util import img_as_float
-
 def calculate_ssim(img1, img2):
     return ssim(img1, img2, data_range=img2.max() - img2.min())
-
 def calculate_vsi(img1, img2):
     def simple_saliency_map(img):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if len(img.shape) == 3 else img
