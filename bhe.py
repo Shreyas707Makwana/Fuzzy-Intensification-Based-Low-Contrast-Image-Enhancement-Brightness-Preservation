@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 from scipy import signal
+
 from skimage.metrics import structural_similarity as ssim
 from skimage.util import img_as_float
 def calculate_ssim(img1, img2):
